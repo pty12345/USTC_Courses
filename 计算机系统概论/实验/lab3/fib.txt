@@ -1,0 +1,41 @@
+.ORIG x3000
+       LD R1,F0
+       LD R2,F1
+       LD R3,F2
+       LD R5,mod
+
+A     ADD R4,R4,R0
+       ADD R4,R4,#-3
+       BRzp B  
+       ADD R7,R7,R0
+       HALT
+       
+B     ADD R1,R1,R1
+       ADD R7,R1,R3
+       AND R7,R7,R5
+       BRnzp C
+       
+C     AND R1,R1,#0
+       ADD R1,R1,R2
+       AND R2,R2,#0
+       ADD R2,R2,R3
+       AND R3,R3,#0
+       ADD R3,R3,R7
+       ADD R4,R4,#-1
+       BRzp B
+       HALT
+       
+      mod .FILL #1023 
+      F0 .FILL #1
+      F1 .FILL #1
+      F2 .FILL #2
+      Fa .FILL #930
+      Fb .FILL #1
+      Fc .FILL #1
+      Fd .FILL #4
+
+<<<<<<< HEAD
+.END
+=======
+.END
+>>>>>>> ebbe919307a49e075a7f5b75030193dc8a9f97b1
