@@ -1,0 +1,10 @@
+①Navigation.cpp：
+  在”C:\Users\pty\Desktop\a1.TXT“文件中按照“v1_name v2_name edge_w'\n'”格式输入边，
+并按控制台提示信息即可查找最短路。
+  注：地名不能包含空格、回车和‘*’。
+
+②Dijkstra_handwriting_heap.cpp
+  Ⅰ输入点数v、边数e、起点s；
+  Ⅱ依此输入e行有向边信息，每行格式为“v1 v2 w”;
+
+  Ⅲ程序会依此输出1~v号点与起点s的最短距离大小。
